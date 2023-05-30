@@ -12,7 +12,8 @@ module.exports = {
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:react-hooks/recommended',
-        'plugin:jsx-a11y/recommended'
+        'plugin:jsx-a11y/recommended',
+        'plugin:react/recommended'
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -88,6 +89,42 @@ module.exports = {
             'single'
         ],
         'react-refresh/only-export-components': 'warn',
+        'react/jsx-boolean-value': 'error',
+        'react/jsx-newline': 'warn',
+        'react/jsx-no-useless-fragment': 'error',
+        'react/jsx-pascal-case': [
+            'error',
+            {'allowAllCaps': false}
+        ],
+        'react/jsx-sort-props': [
+            'warn',
+            {
+                'callbacksLast': true,
+                'multiline': 'last',
+                'shorthandFirst': true
+            }
+        ],
+        'react/jsx-wrap-multilines': [
+            'warn',
+            {
+                'arrow': 'parens-new-line',
+                'assignment': 'parens-new-line',
+                'condition': 'parens-new-line',
+                'declaration': 'parens-new-line',
+                'logical': 'parens-new-line',
+                'prop': 'parens-new-line',
+                'return': 'parens-new-line'
+            }
+        ],
+        'react/prefer-read-only-props': 'warn',
+        'react/react-in-jsx-scope': 'off',
+        'react/self-closing-comp': [
+            'warn',
+            {
+                'component': true,
+                'html': true
+            }
+        ],
         'sort-imports': [
             'error',
             {
