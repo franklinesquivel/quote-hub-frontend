@@ -1,6 +1,6 @@
-import { createApi, fetchBaseQuery }     from '@reduxjs/toolkit/query/react';
-import { API_NINJAS_API, ENDPOINT_TAGS } from '@/constants';
-import { ApiNinjasQuote }                from '@/types';
+import { createApi, fetchBaseQuery }          from '@reduxjs/toolkit/query/react';
+import { API_NINJAS_API, APININJAS_API_TAGS } from '@/constants';
+import { ApiNinjasQuote }                     from '@/types';
 
 
 export const quotesApi = createApi({
@@ -12,7 +12,7 @@ export const quotesApi = createApi({
             return headers;
         }
     }),
-    tagTypes: ENDPOINT_TAGS,
+    tagTypes: APININJAS_API_TAGS,
     endpoints: build => ({
         getRandomQuote: build.query<ApiNinjasQuote, void>({
             query: () => ({
