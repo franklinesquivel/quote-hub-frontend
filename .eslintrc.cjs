@@ -5,7 +5,8 @@ module.exports = {
     },
     ignorePatterns: [
         'node_modules',
-        'dist'
+        'dist',
+        'vite.config.ts'
     ],
     extends: [
         'eslint:recommended',
