@@ -3,7 +3,7 @@ import { quotesApi }      from '@/api';
 
 
 export const store = configureStore({
-    reducer:    {
+    reducer: {
         [quotesApi.reducerPath]: quotesApi.reducer
     },
     middleware: (getDefaultMiddleware) =>
