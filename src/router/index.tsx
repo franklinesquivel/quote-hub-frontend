@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { ROUTES }              from '@/constants';
-import { Home }                from '@/pages';
+import { HomePage }            from '@/pages';
 import { Root }                from '@/Root.tsx';
 
 
@@ -11,7 +11,7 @@ export const router = createBrowserRouter([
         children: [
             {
                 index:   true,
-                element: <Home />
+                element: <HomePage />
             }
         ]
     }
