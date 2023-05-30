@@ -1,7 +1,8 @@
 import { ConfigProvider } from 'antd';
 import React              from 'react';
 import ReactDOM           from 'react-dom/client';
-import { App }            from '@/App.tsx';
+import { RouterProvider } from 'react-router-dom';
+import { router }         from '@/router';
 import { mainTheme }      from '@/themes';
 import './main.css';
 
@@ -9,7 +10,7 @@ import './main.css';
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
         <ConfigProvider theme={ mainTheme }>
-            <App/>
+            <RouterProvider router={ router }/>
         </ConfigProvider>
     </React.StrictMode>
 );
