@@ -4,10 +4,10 @@ import { Outlet } from 'react-router-dom';
 
 export const Root = () => {
     return (
-        <Layout id="app-main-layout">
+        <Layout id='app-main-layout'>
             <Layout>
-                <Layout.Content id="app-content">
-                    <Outlet/>
+                <Layout.Content id='app-content'>
+                    <Outlet />
                 </Layout.Content>
             </Layout>
         </Layout>

@@ -10,7 +10,7 @@ import './main.css';
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
         <ConfigProvider theme={ mainTheme }>
-            <RouterProvider router={ router }/>
+            <RouterProvider router={ router } />
         </ConfigProvider>
     </React.StrictMode>
 );

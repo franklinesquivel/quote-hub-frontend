@@ -7,11 +7,11 @@ import { Root }                from '@/Root.tsx';
 export const router = createBrowserRouter([
     {
         path:     ROUTES.home,
-        element:  <Root/>,
+        element:  <Root />,
         children: [
             {
                 index:   true,
-                element: <Home/>
+                element: <Home />
             }
         ]
     }
