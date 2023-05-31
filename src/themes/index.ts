@@ -15,6 +15,9 @@ export const mainTheme: ThemeConfig = {
     components: {
         Result: {
             colorTextHeading: primaryColor
+        },
+        Layout: {
+            colorBgHeader: primaryColor
         }
     }
 };

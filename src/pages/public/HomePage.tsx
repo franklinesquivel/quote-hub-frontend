@@ -9,7 +9,13 @@ export const HomePage = () => {
         return <p>loading...</p>;
 
     if (isError)
-        return <Alert showIcon message='Error' type='error' />;
+        return (
+            <Alert
+                showIcon
+                message='Error'
+                type='error'
+            />
+        );
 
     return (
         <>

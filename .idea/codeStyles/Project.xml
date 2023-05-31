@@ -6,7 +6,7 @@
       </list>
     </option>
     <HTMLCodeStyleSettings>
-      <option name="HTML_ATTRIBUTE_WRAP" value="4" />
+      <option name="HTML_ATTRIBUTE_WRAP" value="2" />
       <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
       <option name="HTML_QUOTE_STYLE" value="Single" />
       <option name="HTML_ENFORCE_QUOTES" value="true" />
