@@ -1,24 +1,30 @@
-import { LoginOutlined }       from '@ant-design/icons';
-import { Button, Layout, Row } from 'antd';
+import { Layout, Row }    from 'antd';
+import { ClickPopup }     from '@/components';
+import { useAppSelector } from '@/hooks';
 import './HeaderNav.css';
 
 
-export const HeaderNav = () => (
-    <Layout.Header id='app-header-nav'>
-        <Row justify='space-between'>
-            <h1 className='app-title'>
-                QuoteHub
-            </h1>
+export const HeaderNav = () => {
 
-            <div>
-                <Button
-                    shape='round'
-                    size='large'
-                >
-                    Log In
-                    <LoginOutlined />
-                </Button>
-            </div>
-        </Row>
-    </Layout.Header>
-);
+    const { token } = useAppSelector(state => state.token);
+
+    return (
+        <Layout.Header id='app-header-nav'>
+            <Row
+                justify='space-between'
+            >
+                <h1 className='app-title'>
+                    QuoteHub
+                </h1>
+
+                {
+                    !token && (
+                        <div>
+                            <ClickPopup />
+                        </div>
+                    )
+                }
+            </Row>
+        </Layout.Header>
+    );
+};
