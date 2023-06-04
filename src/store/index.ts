@@ -2,20 +2,20 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { persistReducer, persistStore }    from 'redux-persist';
 import storage                             from 'redux-persist/lib/storage';
 import { quoteHubApi, quotesApi }          from '@/api';
-import { tokenSlice }                      from '@/app';
+import { authSlice }                       from '@/app';
 
 
 const persistConfig = {
-    key: 'token',
+    key: 'auth',
     storage: storage,
     version: 1,
-    whitelist: ['token']
+    whitelist: ['auth.token']
 };
 
 const reducers = combineReducers({
     [quotesApi.reducerPath]: quotesApi.reducer,
     [quoteHubApi.reducerPath]: quoteHubApi.reducer,
-    token: tokenSlice.reducer
+    auth: authSlice.reducer
 });
 
 const tokenPersisted = persistReducer(persistConfig, reducers);
