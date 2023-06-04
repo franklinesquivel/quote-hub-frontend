@@ -1,3 +1,2 @@
-export * from './quotes.api';
-export * from './quote_hub.api';
-export * from './quote_hub.api';
+export * from './quotes.api.ts';
+export * from './quoteHub.api.ts';
