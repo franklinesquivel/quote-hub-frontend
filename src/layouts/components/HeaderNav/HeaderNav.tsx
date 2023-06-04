@@ -6,7 +6,7 @@ import './HeaderNav.css';
 
 export const HeaderNav = () => {
 
-    const { token } = useAppSelector(state => state.token);
+    const accessToken = useAppSelector(({ auth: { token } }) => token);
 
     return (
         <Layout.Header id='app-header-nav'>
@@ -18,7 +18,7 @@ export const HeaderNav = () => {
                 </h1>
 
                 {
-                    !token && (
+                    !accessToken && (
                         <div>
                             <ClickPopup />
                         </div>
