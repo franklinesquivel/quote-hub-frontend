@@ -1,10 +1,13 @@
+import { CategoryType } from '@/types';
+
+
 export type AccessToken = {
     token: string
 }
 
 export type Categories = {
     id: string
-    name: string
+    name: CategoryType
 }
 
 export type UserInfo = {
