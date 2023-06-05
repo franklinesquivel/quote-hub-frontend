@@ -1,0 +1,8 @@
+.login-error {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.login-error-message {
+    color: #ff0000;
+}
